@@ -17,6 +17,8 @@ namespace Lab3.TicketVendingMachine
             switch (info.Payment)
             {
                 case UIPayment.CreditCard:
+                    // Add 50 cent if paying with credit card
+                    price += 0.50f;
                     creditCard();
                     break;
                 case UIPayment.DebitCard:
