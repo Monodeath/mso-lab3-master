@@ -49,7 +49,7 @@ namespace Lab3
 		}
 	}
 
-	// Mock CreditCard implementation
+	// Mock DebitCard implementation
 	public class DebitCard : ICard
 	{
 		public void Connect ()
