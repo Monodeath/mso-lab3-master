@@ -39,6 +39,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketVendingMachine\Payment.cs" />
+    <Compile Include="TicketVendingMachine\ProductSpecification.cs" />
+    <Compile Include="TicketVendingMachine\Sale.cs" />
+    <Compile Include="TicketVendingMachine\Ticket.cs" />
+    <Compile Include="TicketVendingMachine\TicketVendingMachine.cs" />
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
     </Compile>
