@@ -7,7 +7,7 @@ namespace Lab3.TicketVendingMachine
 {
     public static class Payment
     {
-        static float price;
+        private static float price;
 
         public static void newPayment(UIInfo info, float p)
         {

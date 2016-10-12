@@ -7,7 +7,7 @@ namespace Lab3.TicketVendingMachine
 {
     public static class Sale
     {
-        static float total;
+        private static float total;
         static Ticket ticket;
 
         public static void newSale(UIInfo info)
