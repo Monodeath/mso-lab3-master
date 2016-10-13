@@ -7,14 +7,15 @@ namespace Lab3.TicketVendingMachine
 {
     public static class ProductSpecification
     {
-        public static int tableColumn(UIInfo info)
+        private static int tableColumn;
+
+        public static int TableColumn(UIInfo info)
         {
             // Compute the column in the table based on choices
-            int tableColumn;
             // First based on class
             tableColumn = Class(info.Class);
             // Then, on the discount
-            tableColumn = Discount(info.Discount, tableColumn);
+            Discount(info.Discount);
             return tableColumn;
         }
 
@@ -29,16 +30,16 @@ namespace Lab3.TicketVendingMachine
             }
         }
 
-        private static int Discount(UIDiscount discount, int tableColumn)
+        private static void Discount(UIDiscount discount)
         {
             switch (discount)
             {
                 case UIDiscount.TwentyDiscount:
-                    return tableColumn + 1;
+                    tableColumn += 1;
+                    break;
                 case UIDiscount.FortyDiscount:
-                    return tableColumn + 2;
-                default:
-                    return tableColumn;
+                    tableColumn += 2;
+                    break;
             }
         }
     }

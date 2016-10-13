@@ -12,7 +12,7 @@ namespace Lab3.TicketVendingMachine
 
         public static void newSale(UIInfo info)
         {
-            ticket = new Ticket(ProductSpecification.tableColumn(info), info);
+            ticket = new Ticket(ProductSpecification.TableColumn(info), info);
             getTotal();
         }
 

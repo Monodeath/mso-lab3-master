@@ -8,11 +8,13 @@ namespace Lab3.TicketVendingMachine
     public class Ticket
     {
         public float price;
+        private int tariefeenheden;
 
         public Ticket(int tableColumn, UIInfo info)
         {
             // Get number of tariefeenheden
-            int tariefeenheden = getTarief(info.From, info.To);
+            tariefeenheden = getTarief(info.From, info.To);
+
             getPrice(tariefeenheden, tableColumn, info.Way);
         }
 
